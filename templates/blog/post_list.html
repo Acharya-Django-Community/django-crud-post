@@ -7,7 +7,7 @@
 <body>
 {% if messages %}
     {% for messages in messages %}
-            <div class="alert alert-success">
+            <div class="alert alert-{{ messages.tags }}">
                 {{ messages }}
             </div>
     {% endfor %}
